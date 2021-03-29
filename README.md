@@ -50,25 +50,9 @@ second minutes hour day month day-of-week
   |__________ seconds (0 - 59)
 ```
 
-## GH Actions - crontab guru
+### GH Actions - crontab guru
 The website https://crontab.guru is a good resource for creating new crontab jobs schema.
 
-## GH Actions - Jobs at every 5 minutes 
-Job every 5 minutes
-```
-name: "Antrea Cronjob"
-on:
-  schedule:
-    - cron:  "*/5 * * * *"
-jobs:
-  antrea-job:
-    runs-on: [ ubuntu-latest ]
-    steps:
-    - uses: actions/checkout@v2
-    - name: Run
-      working-directory: ./antrea
-      run: ./setup.sh
-```
 ## GH Actions - Variables
 ### GH Actions - Workflow Variables
 ```
@@ -146,50 +130,6 @@ Runs a set of commands using the runners shell
     echo test, and deploy your project.
 ```
 
-## GH Actions - Jobs at every 15 minutes
-```
-on:
-  schedule:
-    - cron:  '*/15 * * * *'    # At every 15 minutes
-```
-
-
-## GH Actions - Jobs based on directory changes
-```
-name: "Calico test"
-# If any file change in the Calico path a new build will be triggered
-on:
-  push:
-    branches: [ main ]
-    paths:
-      - calico/**
-
-jobs:
-  calico-job:
-    runs-on: [ ubuntu-latest ]
-    steps:
-    - uses: actions/checkout@v2
-    - name: Run
-      working-directory: ./calico
-      run: ./setup.sh
-```
-
-## GH Actions - Run the job once a week
-Every Sunday at 00:00am
-```
-on:
-  schedule:
-    # Every Sunday at 00:00am
-    - cron: '0 0 * * 0'
-```
-
-Every Monday at 1:05am
-```
-on:
-  schedule:
-    # Every Monday at 1:05am
-    - cron: '5 1 * * 1'
-```   
 ## GH Actions - workflow_dispatch
 You will see a ‘Run workflow’ button on the Actions tab, to easily trigger a run.
 ```
@@ -253,3 +193,66 @@ jobs:
         echo "Environment: ${{ github.event.inputs.environment }}"
         echo "Branch: ${{ github.event.inputs.branch }}"
 ```
+
+## GH Actions - Examples
+### GH Actions - Jobs at every 5 minutes 
+Job every 5 minutes
+```
+name: "Antrea Cronjob"
+on:
+  schedule:
+    - cron:  "*/5 * * * *"
+jobs:
+  antrea-job:
+    runs-on: [ ubuntu-latest ]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run
+      working-directory: ./antrea
+      run: ./setup.sh
+```
+
+### GH Actions - Jobs at every 15 minutes
+```
+on:
+  schedule:
+    - cron:  '*/15 * * * *'    # At every 15 minutes
+```
+
+
+### GH Actions - Jobs based on directory changes
+```
+name: "Calico test"
+# If any file change in the Calico path a new build will be triggered
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - calico/**
+
+jobs:
+  calico-job:
+    runs-on: [ ubuntu-latest ]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run
+      working-directory: ./calico
+      run: ./setup.sh
+```
+
+### GH Actions - Run the job once a week
+Every Sunday at 00:00am
+```
+on:
+  schedule:
+    # Every Sunday at 00:00am
+    - cron: '0 0 * * 0'
+```
+
+Every Monday at 1:05am
+```
+on:
+  schedule:
+    # Every Monday at 1:05am
+    - cron: '5 1 * * 1'
+```   
