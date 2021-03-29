@@ -17,6 +17,7 @@
     + [GH Actions - Run the job once a week](#gh-actions---run-the-job-once-a-week)
     + [GH Actions - Depending from another Job](#gh-actions---depending-from-another-job)
     + [GH Actions - if](#gh-actions---if)
+    + [GH Actions - upload](#gh-actions---upload)
   * [GH Actions - Community](#gh-actions---community)
   * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
@@ -303,6 +304,45 @@ jobs:
           ./test.sh
 ```
 
+### GH Actions - upload
+Users muse use **actions/upload-artifact@v2**
+
+```
+name: "Antrea v0.12.2 job to generate cyclonus artifacts"
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily, 3:00pm
+    - cron: '00 15 * * *'
+
+jobs:
+  antrea-job-v0-12-2-artifacts:
+    runs-on: [ ubuntu-latest ]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+           path: main
+
+      - uses: actions/checkout@master
+        with:
+          repository: K8sbykeshed/k8s-local-dev
+          path: k8s-local-dev
+
+      - run: |
+          pushd ./k8s-local-dev
+            ANTREA_VERSION=v0.12.2 ./k8s-local-dev antrea
+          popd
+
+          pushd ./main
+            JOB_YAML="./jobs/antrea/cyclonus-job.yaml" DIR_CNI="antrea" ./run-cyclonus-job.sh
+          popd
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: logs
+          path: ./main/downloads/
+          retention-days: 60
+```
 ## GH Actions - Community
 Users can exchange knowledge via [the community around github actions.](https://github.community/c/code-to-cloud/github-actions/)
 
