@@ -6,7 +6,7 @@
     + [GH Actions - Workflow Variables](#gh-actions---workflow-variables)
     + [GH Actions - Variables - Jobs and Steps](#gh-actions---variables---jobs-and-steps)
     + [GH Actions - Variables - Overwrite](#gh-actions---variables---overwrite)
-  * [GH Actions - workflow_dispatch](#gh-actions---workflow-dispatch)
+  * [GH Actions - workflow dispatch](#gh-actions---workflow-dispatch)
     + [GH Actions - Input](#gh-actions---input)
   * [GH Actions - Examples](#gh-actions---examples)
     + [GH Actions - Run multi lines scripts](#gh-actions---run-multi-lines-scripts)
@@ -123,7 +123,7 @@ jobs:
           echo "${{ env.supervar }}"
 ```
 
-## GH Actions - workflow_dispatch
+## GH Actions - workflow dispatch
 You will see a ‘Run workflow’ button on the Actions tab, to easily trigger a run.
 ```
 name: "CNI daily test"
