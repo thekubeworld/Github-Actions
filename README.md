@@ -16,6 +16,7 @@
     + [GH Actions - Run the job once a week](#gh-actions---run-the-job-once-a-week)
     + [GH Actions - Depending from another Job](#gh-actions---depending-from-another-job)
   * [GH Actions - Community](#gh-actions---community)
+  * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
 # Github-Actions
 Actions based on events, like push, pull or any other.
@@ -259,3 +260,6 @@ jobs:
 
 ## GH Actions - Community
 Users can exchange knowledge via [the community around github actions.](https://github.community/c/code-to-cloud/github-actions/)
+
+## GH Actions - Docs and Books
+[Hands-on GitHub Actions ](https://read.amazon.com/kp/embed?asin=B08X675RHC&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_TT09RHFEAH2FGKVQ96QF&tag=dougsland)
