@@ -16,6 +16,7 @@
     + [GH Actions - Jobs based on directory changes](#gh-actions---jobs-based-on-directory-changes)
     + [GH Actions - Run the job once a week](#gh-actions---run-the-job-once-a-week)
     + [GH Actions - Depending from another Job](#gh-actions---depending-from-another-job)
+    + [GH Actions - if](#gh-actions---if)
   * [GH Actions - Community](#gh-actions---community)
   * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
@@ -189,6 +190,23 @@ jobs:
 ```
 
 ## GH Actions - Examples
+### GH Actions - if
+```
+name: CI
+on: push
+jobs:
+  prod-check:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to production server on branch $GITHUB_REF"
+```
+In this example, the if statement checks the github.ref context to determine the current branch name;
+if the name is refs/heads/main, then the subsequent steps are executed. The if check is processed by
+GitHub Actions, and the job is only sent to the runner if the result is true. Once the job is sent to
+the runner, the step is executed and refers to the $GITHUB_REF environment variable from the runner.
+
+
 ### GH Actions - Run multi lines scripts
 ```
 Runs a set of commands using the runners shell
