@@ -19,6 +19,7 @@
     + [GH Actions - if](#gh-actions---if)
     + [GH Actions - upload](#gh-actions---upload)
     + [GH Actions - Secrets](#gh-actions---secrets)
+    + [GH actions - GITHUB_TOKEN](#gh-actions---GITHUBTOKEN)
   * [GH Actions - Community](#gh-actions---community)
   * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
@@ -334,6 +335,22 @@ jobs:
           my_command "${{ env.supervar }}"
 ```
 
+### GH Actions - GITHUB TOKEN
+Example passing GITHUB_TOKEN as an input
+This example workflow uses the [labeler action](https://github.com/actions/labeler) in PR, which requires the GITHUB_TOKEN as the value for the repo-token input parameter:
+
+```
+name: Pull request labeler
+on:
+- pull_request_target
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/labeler@v2
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+```
 ### GH Actions - upload
 Users muse use **actions/upload-artifact@v2**
 
@@ -379,4 +396,5 @@ Users can exchange knowledge via [the community around github actions.](https://
 ## GH Actions - Docs and Books
 [Docs GitHub Actions - Default Environment Variables](https://docs.github.com/en/actions/reference/environment-variables)  
 [Docs GitHub Actions - Create secret in the project](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository)  
+[Docs Github Actions - GITHUB_TOKEN](https://docs.github.com/en/actions/reference/authentication-in-a-workflow)  
 [Hands-on GitHub Actions](https://read.amazon.com/kp/embed?asin=B08X675RHC&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_TT09RHFEAH2FGKVQ96QF&tag=dougsland)
