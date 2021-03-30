@@ -418,6 +418,30 @@ jobs:
           retention-days: 60
 ```
 ### GH Actions - Artifacts passed to another job in the workflow
+```
+jobs:
+  FoobarStep
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: FoobarStep
+      run: |
+        cd /path
+        build-my-app
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: "**/bin/myapp-path/"
+
+  NextStep:
+    runs-on: ubuntu-latest
+    need: FoobarStep
+    steps:
+    - uses: actions/download-artifact@v2
+      with:
+        name: my-artifact
+```
 
 ## GH Actions - Community
 Users can exchange knowledge via [the community around github actions.](https://github.community/c/code-to-cloud/github-actions/)
