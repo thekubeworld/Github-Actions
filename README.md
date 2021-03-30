@@ -20,7 +20,8 @@
     + [GH Actions - Secrets](#gh-actions---secrets)
     + [GH Actions - GITHUB_TOKEN](#gh-actions---GITHUB-TOKEN)
     + [GH Actions - Artifacts: Store](#gh-actions---Artifacts-store)
-    + [GH Actions - Artifacts: Passing stored artifcats to another job in the workflow](#gh-actions---Artifacts-passed-to-another-job-in-the-workflow) 
+    + [GH Actions - Artifacts: Passing stored artifcats to another job in the workflow](#gh-actions---Artifacts-passed-to-another-job-in-the-workflow)  
+    + [GH Actions - Cache](#gh-actions---Cache) 
   * [GH Actions - Community](#gh-actions---community)
   * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
@@ -446,6 +447,18 @@ jobs:
 
 See also: https://docs.github.com/en/actions/guides/storing-workflow-data-as-artifacts
 
+### GH Actions - Cache
+```
+- name: Cache multiple paths
+  uses: actions/cache@v2
+  with:
+    path: |
+      ~/cache
+      !~/cache/exclude
+    key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+ ```
+More info: https://github.com/actions/cache
+
 ## GH Actions - Community
 Users can exchange knowledge via [the community around github actions.](https://github.community/c/code-to-cloud/github-actions/)
 
@@ -454,4 +467,5 @@ Users can exchange knowledge via [the community around github actions.](https://
 [Docs GitHub Actions - Create secret in the project](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository)  
 [Docs Github Actions - GITHUB_TOKEN](https://docs.github.com/en/actions/reference/authentication-in-a-workflow)  
 [Docs Github Actions - Storing Workflow data as Artifacts](https://docs.github.com/en/actions/guides/storing-workflow-data-as-artifacts)  
+[Github Actions Cache](https://github.com/actions/cache)  
 [Hands-on GitHub Actions](https://read.amazon.com/kp/embed?asin=B08X675RHC&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_TT09RHFEAH2FGKVQ96QF&tag=dougsland)
