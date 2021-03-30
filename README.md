@@ -336,9 +336,9 @@ jobs:
 ```
 
 ### GH Actions - GITHUB TOKEN
-Example passing GITHUB_TOKEN as an input
+Example 1:  
+Passing GITHUB_TOKEN as an input
 This example workflow uses the [labeler action](https://github.com/actions/labeler) in PR, which requires the GITHUB_TOKEN as the value for the repo-token input parameter:
-
 ```
 name: Pull request labeler
 on:
@@ -351,6 +351,31 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
 ```
+
+Example 2:  
+You can use the GITHUB_TOKEN to make authenticated API calls. This example workflow creates an issue using the GitHub REST API:
+```
+name: Create issue on commit
+on:
+- push
+jobs:
+  create_commit:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Create issue using REST API
+      run: |
+        curl --request POST \
+        --url https://api.github.com/repos/${{ github.repository }}/issues \
+        --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+        --header 'content-type: application/json' \
+        --data '{
+          "title": "Automated issue for commit: ${{ github.sha }}",
+          "body": "This issue was automatically created by the GitHub Action workflow **${{ github.workflow }}**. \n\n The commit hash was: _${{ github.sha }}_."
+          }' \
+        --fail
+ ```
+
+
 ### GH Actions - upload
 Users muse use **actions/upload-artifact@v2**
 
