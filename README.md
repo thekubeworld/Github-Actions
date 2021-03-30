@@ -23,6 +23,7 @@
     + [GH Actions - Artifacts: Passing stored artifcats to another job in the workflow](#gh-actions---Artifacts-passed-to-another-job-in-the-workflow)  
     + [GH Actions - Cache](#gh-actions---Cache) 
     + [GH Actions - Service Container](#gh-actions---Service-Container)
+    + [GH Actions - Creating an Action based on Docker Image](#gh-actions-Creating-an-Action-based-on-Docker-Image)
   * [GH Actions - Community](#gh-actions---community)
   * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
@@ -469,6 +470,10 @@ For more info see:
 [Github Actions - Service Container - PostgreSQL](https://docs.github.com/en/actions/guides/creating-postgresql-service-containers)  
 [Github Actions - Service Container - Redis](https://docs.github.com/en/actions/guides/creating-redis-service-containers)  
 
+## GH - Creating an Action based on Docker image
+See: [Github Actions - Creating a Docker Action](https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action)  
+
+
 ## GH Actions - Community
 Users can exchange knowledge via [the community around github actions.](https://github.community/c/code-to-cloud/github-actions/)
 
@@ -482,4 +487,5 @@ Users can exchange knowledge via [the community around github actions.](https://
 [Github Actions - Service Container](https://docs.github.com/en/actions/guides/about-service-containers)  
 [Github Actions - Service Container - PostgreSQL](https://docs.github.com/en/actions/guides/creating-postgresql-service-containers)  
 [Github Actions - Service Container - Redis](https://docs.github.com/en/actions/guides/creating-redis-service-containers)  
+[Github Actions - Creating a Docker Action](https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action)  
 [Hands-on GitHub Actions](https://read.amazon.com/kp/embed?asin=B08X675RHC&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_TT09RHFEAH2FGKVQ96QF&tag=dougsland)
