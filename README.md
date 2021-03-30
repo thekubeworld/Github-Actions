@@ -336,7 +336,8 @@ jobs:
 ```
 
 ### GH Actions - GITHUB TOKEN
-Example 1:  
+**Example 1**:  
+
 Passing GITHUB_TOKEN as an input
 This example workflow uses the [labeler action](https://github.com/actions/labeler) in PR, which requires the GITHUB_TOKEN as the value for the repo-token input parameter:
 ```
@@ -352,7 +353,8 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-Example 2:  
+**Example 2**:  
+
 You can use the GITHUB_TOKEN to make authenticated API calls. This example workflow creates an issue using the GitHub REST API:
 ```
 name: Create issue on commit
