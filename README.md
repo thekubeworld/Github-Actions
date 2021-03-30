@@ -18,6 +18,7 @@
     + [GH Actions - Depending from another Job](#gh-actions---depending-from-another-job)
     + [GH Actions - if](#gh-actions---if)
     + [GH Actions - upload](#gh-actions---upload)
+    + [GH Actions - Secrets](#gh-actions---secrets)
   * [GH Actions - Community](#gh-actions---community)
   * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
