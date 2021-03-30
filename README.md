@@ -18,8 +18,8 @@
     + [GH Actions - Depending from another Job](#gh-actions---depending-from-another-job)
     + [GH Actions - if](#gh-actions---if)
     + [GH Actions - Secrets](#gh-actions---secrets)
-    + [GH Actions - GITHUB_TOKEN](#gh-actions---GITHUB-TOKEN)
-    + 
+    + [GH Actions - GITHUB_TOKEN](#gh-actions---GITHUB-TOKEN)  
+      
     + [GH Actions - Artifacts: Store](#gh-actions---Artifacts-store)
     + [GH Actions - Artifacts: Passing stored artifcats to another job in the workflow](#gh-actions---Artifacts-passed-to-another-job-in-the-workflow) 
   * [GH Actions - Community](#gh-actions---community)
