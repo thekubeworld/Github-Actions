@@ -444,6 +444,8 @@ jobs:
         name: my-artifact
 ```
 
+See also: https://docs.github.com/en/actions/guides/storing-workflow-data-as-artifacts
+
 ## GH Actions - Community
 Users can exchange knowledge via [the community around github actions.](https://github.community/c/code-to-cloud/github-actions/)
 
@@ -451,4 +453,5 @@ Users can exchange knowledge via [the community around github actions.](https://
 [Docs GitHub Actions - Default Environment Variables](https://docs.github.com/en/actions/reference/environment-variables)  
 [Docs GitHub Actions - Create secret in the project](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository)  
 [Docs Github Actions - GITHUB_TOKEN](https://docs.github.com/en/actions/reference/authentication-in-a-workflow)  
+[Docs Github Actions - Storing Workflow data as Artifacts](https://docs.github.com/en/actions/guides/storing-workflow-data-as-artifacts)  
 [Hands-on GitHub Actions](https://read.amazon.com/kp/embed?asin=B08X675RHC&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_TT09RHFEAH2FGKVQ96QF&tag=dougsland)
