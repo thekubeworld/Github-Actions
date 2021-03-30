@@ -304,6 +304,35 @@ jobs:
           ./test.sh
 ```
 
+### GH Actions - Secrets
+Secrets is a good way to hide passwords in the CI/CD jobs, specially in the logs. Users will note that even doing `echo ${{secrets.MYSECRET}}` the real
+password won't show. It will show `***` instead.
+
+To create: 
+First, [create a secret in the project](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository) 
+Second, use in your yaml file.
+```
+name: CI
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+env:
+  supervar: ${{secrets.MY_CREATED_SECRET_NAME}
+
+jobs:
+  branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Pass secret to mycommand
+        run: |
+          my_command "${{ env.supervar }}"
+```
+
 ### GH Actions - upload
 Users muse use **actions/upload-artifact@v2**
 
@@ -347,5 +376,6 @@ jobs:
 Users can exchange knowledge via [the community around github actions.](https://github.community/c/code-to-cloud/github-actions/)
 
 ## GH Actions - Docs and Books
-[Docs GithHub Actions - Default Environment Variables](https://docs.github.com/en/actions/reference/environment-variables)  
-[Hands-on GitHub Actions ](https://read.amazon.com/kp/embed?asin=B08X675RHC&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_TT09RHFEAH2FGKVQ96QF&tag=dougsland)
+[Docs GitHub Actions - Default Environment Variables](https://docs.github.com/en/actions/reference/environment-variables)  
+[Docs GitHub Actions - Create secret in the project](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
+[Hands-on GitHub Actions](https://read.amazon.com/kp/embed?asin=B08X675RHC&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_TT09RHFEAH2FGKVQ96QF&tag=dougsland)
