@@ -23,7 +23,7 @@
     + [GH Actions - Artifacts: Passing stored artifcats to another job in the workflow](#gh-actions---Artifacts-passed-to-another-job-in-the-workflow)  
     + [GH Actions - Cache](#gh-actions---Cache) 
     + [GH Actions - Service Container](#gh-actions---Service-Container)
-    + [GH Actions - Creating an Action based on Docker Image](#gh-actions-Creating-an-Action-based-on-Docker-Image)
+    + [GH Actions - Creating an Action based on Docker Image](#gh-actions---Creating-an-Action-based-on-Docker-Image)
   * [GH Actions - Community](#gh-actions---community)
   * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
