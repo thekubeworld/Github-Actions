@@ -419,6 +419,7 @@ jobs:
 ```
 ### GH Actions - Artifacts passed to another job in the workflow
 ```
+on: [push, pull_request]
 jobs:
   FoobarStep
     runs-on: ubuntu-latest
