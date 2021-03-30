@@ -17,9 +17,10 @@
     + [GH Actions - Run the job once a week](#gh-actions---run-the-job-once-a-week)
     + [GH Actions - Depending from another Job](#gh-actions---depending-from-another-job)
     + [GH Actions - if](#gh-actions---if)
-    + [GH Actions - upload](#gh-actions---upload)
     + [GH Actions - Secrets](#gh-actions---secrets)
-    + [GH actions - GITHUB_TOKEN](#gh-actions---GITHUB-TOKEN)
+    + [GH Actions - GITHUB_TOKEN](#gh-actions---GITHUB-TOKEN)
+    + [GH Actions - Artifacts store](#gh-actions---upload)
+    + [GH Actions - Artifacts passed to another job in the workflow](#gh-actions---Artifacts-passed-to-another-job-in-the-workflow) 
   * [GH Actions - Community](#gh-actions---community)
   * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
@@ -377,9 +378,8 @@ jobs:
         --fail
  ```
 
-
-### GH Actions - upload
-Users muse use **actions/upload-artifact@v2**
+### GH Actions - Artifacts store
+To store the artifacts users must use **actions/upload-artifact@v2**
 
 ```
 name: "Antrea v0.12.2 job to generate cyclonus artifacts"
@@ -417,6 +417,8 @@ jobs:
           path: ./main/downloads/
           retention-days: 60
 ```
+### GH Actions - Artifacts passed to another job in the workflow
+
 ## GH Actions - Community
 Users can exchange knowledge via [the community around github actions.](https://github.community/c/code-to-cloud/github-actions/)
 
