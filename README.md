@@ -19,8 +19,8 @@
     + [GH Actions - if](#gh-actions---if)
     + [GH Actions - Secrets](#gh-actions---secrets)
     + [GH Actions - GITHUB_TOKEN](#gh-actions---GITHUB-TOKEN)
-    + [GH Actions - Artifacts store](#gh-actions---upload)
-    + [GH Actions - Artifacts passed to another job in the workflow](#gh-actions---Artifacts-passed-to-another-job-in-the-workflow) 
+    + [GH Actions - Artifacts: Store](#gh-actions---store)
+    + [GH Actions - Artifacts: Passing stored artifcats to another job in the workflow](#gh-actions---Artifacts-passed-to-another-job-in-the-workflow) 
   * [GH Actions - Community](#gh-actions---community)
   * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
