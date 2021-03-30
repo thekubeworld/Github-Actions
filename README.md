@@ -22,6 +22,7 @@
     + [GH Actions - Artifacts: Store](#gh-actions---Artifacts-store)
     + [GH Actions - Artifacts: Passing stored artifcats to another job in the workflow](#gh-actions---Artifacts-passed-to-another-job-in-the-workflow)  
     + [GH Actions - Cache](#gh-actions---Cache) 
+    + [GH Actions - Service Container](#gh-actions---Service-Container)
   * [GH Actions - Community](#gh-actions---community)
   * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
@@ -459,6 +460,15 @@ See also: https://docs.github.com/en/actions/guides/storing-workflow-data-as-art
  ```
 More info: https://github.com/actions/cache
 
+## GH Actions - Service Container
+Service containers are Docker containers that provide a simple and portable way for you to host services that you might need to test or operate your application in a workflow. For example, your workflow might need to run integration tests that require access to a database and memory cache.  
+You can configure service containers for each job in a workflow. GitHub creates a fresh Docker container for each service configured in the workflow, and destroys the service container when the job completes. Steps in a job can communicate with all service containers that are part of the same job.  
+
+For more info see:
+[Github Actions - Service Container](https://docs.github.com/en/actions/guides/about-service-containers)  
+[Github Actions - Service Container - PostgreSQL](https://docs.github.com/en/actions/guides/creating-postgresql-service-containers)  
+[Github Actions - Service Container - Redis](https://docs.github.com/en/actions/guides/creating-redis-service-containers)  
+
 ## GH Actions - Community
 Users can exchange knowledge via [the community around github actions.](https://github.community/c/code-to-cloud/github-actions/)
 
@@ -471,4 +481,5 @@ Users can exchange knowledge via [the community around github actions.](https://
 [Github Actins Runners on local Kubernetes](https://sanderknape.com/2020/03/self-hosted-github-actions-runner-kubernetes/)  
 [Github Actions - Service Container](https://docs.github.com/en/actions/guides/about-service-containers)  
 [Github Actions - Service Container - PostgreSQL](https://docs.github.com/en/actions/guides/creating-postgresql-service-containers)  
+[Github Actions - Service Container - Redis](https://docs.github.com/en/actions/guides/creating-redis-service-containers)  
 [Hands-on GitHub Actions](https://read.amazon.com/kp/embed?asin=B08X675RHC&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_TT09RHFEAH2FGKVQ96QF&tag=dougsland)
