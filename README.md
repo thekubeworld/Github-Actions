@@ -470,7 +470,7 @@ For more info see:
 [Github Actions - Service Container - PostgreSQL](https://docs.github.com/en/actions/guides/creating-postgresql-service-containers)  
 [Github Actions - Service Container - Redis](https://docs.github.com/en/actions/guides/creating-redis-service-containers)  
 
-## GH - Creating an Action based on Docker image
+## GH Actions - Creating an Action based on Docker image
 See: [Github Actions - Creating a Docker Action](https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action)  
 
 
