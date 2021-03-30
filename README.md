@@ -464,7 +464,7 @@ More info: https://github.com/actions/cache
 Service containers are Docker containers that provide a simple and portable way for you to host services that you might need to test or operate your application in a workflow. For example, your workflow might need to run integration tests that require access to a database and memory cache.  
 You can configure service containers for each job in a workflow. GitHub creates a fresh Docker container for each service configured in the workflow, and destroys the service container when the job completes. Steps in a job can communicate with all service containers that are part of the same job.  
 
-For more info see:
+For more info see:  
 [Github Actions - Service Container](https://docs.github.com/en/actions/guides/about-service-containers)  
 [Github Actions - Service Container - PostgreSQL](https://docs.github.com/en/actions/guides/creating-postgresql-service-containers)  
 [Github Actions - Service Container - Redis](https://docs.github.com/en/actions/guides/creating-redis-service-containers)  
