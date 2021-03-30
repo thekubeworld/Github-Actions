@@ -19,7 +19,7 @@
     + [GH Actions - if](#gh-actions---if)
     + [GH Actions - upload](#gh-actions---upload)
     + [GH Actions - Secrets](#gh-actions---secrets)
-    + [GH actions - GITHUB_TOKEN](#gh-actions---GITHUBTOKEN)
+    + [GH actions - GITHUB_TOKEN](#gh-actions---GITHUB-TOKEN)
   * [GH Actions - Community](#gh-actions---community)
   * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
