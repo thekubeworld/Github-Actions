@@ -533,7 +533,7 @@ GLzoxxRai1ESDVg8uk0BzV1f1ux6UENoQhyXKlbeaYGSt8CHRyHPsGvZhebSyTetaGuYhV
 3JDJ41YTOocCw6BgDTtMqYvSGe473S6H32uy/5NHyumDCqYocVVYEwiSIWBRSuLhie8ns+
 7UglG05p1eHCAxOqv2jIzyQOfyxxCGfJZxJ/z4mGzxhKjAHFmLpRSrwgNS5iURsvhO3zZK
 HpMKNdM5EhQjScFQkJSCTkf+C8pDXpWHpUt5LgSWLbnD49yD12QS/fJ+9weT1r/4hHo39n
-Q4D/rxQabIW5AAAAE2RvdWdzbGFuZEBnbWFpbC5jb20BAgMEBQYH
+Q4D/rxQabIW5AAAAE2RvdWdzbGFuZEBnbWFpbC5jb20BAgMEBQYH  
 -----END OPENSSH PRIVATE KEY-----```
 
 **Click**: Add Secret
@@ -575,9 +575,9 @@ jobs:
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 ```
           
-5) On the github url from the source project, click in:
-     - the tab Actions
-     - Mirror  -> Run workflow -> Branch: main -> Run workflow
+5) On the Github url from the **Source Project**, click in:
+     - the tab **Actions**
+     - Mirror (the new job)  -> Run workflow -> Branch: main -> Run workflow
 
 
 ## GH Actions - Community
