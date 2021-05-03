@@ -500,7 +500,7 @@ $ ssh-keygen -t rsa -b 4096 -C "dougsland@gmail.com"  -f ~/.ssh/mirroring_SSH_KE
 -> Settings -> Secrets -> New repository secret  
 
 **Title**: SSH_PRIVATE_KEY  
-**Key**: ```-----BEGIN OPENSSH PRIVATE KEY-----
+**Key**: ```-----BEGIN OPENSSH PRIVATE KEY-----  
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAACFwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAgEAxtxXXJVeCR7wRA+WJ8cUztKXWhHVFGi2oLxvHs2wWClAAwIjqZmq
 Wtj+UpJUCRsynCabu+CabxLj+dlo2MGGCEzP+RkJloRcS2+9/36D+Q0Fq4WpOH81n93UHg
@@ -532,8 +532,7 @@ jksoQz78a8MKKPAAABAQDbot5JjCH849QDJiQhZEHl1JgF+ISvUqi9u5E+xuHO28JcPx8c
 GLzoxxRai1ESDVg8uk0BzV1f1ux6UENoQhyXKlbeaYGSt8CHRyHPsGvZhebSyTetaGuYhV  
 3JDJ41YTOocCw6BgDTtMqYvSGe473S6H32uy/5NHyumDCqYocVVYEwiSIWBRSuLhie8ns+  
 7UglG05p1eHCAxOqv2jIzyQOfyxxCGfJZxJ/z4mGzxhKjAHFmLpRSrwgNS5iURsvhO3zZK  
-HpMKNdM5EhQjScFQkJSCTkf+C8pDXpWHpUt5LgSWLbnD49yD12QS/fJ+9weT1r/4hHo39n  
-Q4D/rxQabIW5AAAAE2RvdWdzbGFuZEBnbWFpbC5jb20BAgMEBQYH  
+HpMKNdM5EhQjScFQkJSCTkf+C8pDXpWHpUt5LgSWLbnD49yD12QS/fJ+9weT1r/4hHo39n   
 -----END OPENSSH PRIVATE KEY-----```
 
 **Click**: Add Secret
