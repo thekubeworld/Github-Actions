@@ -477,7 +477,7 @@ For more info see:
 See: [Github Actions - Creating a Docker Action](https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action)  
 
 ### GH Actions - Mirroring Github Repos
-Instruction how to mirror github projects via Github Actions with Git Sync Action (https://github.com/marketplace/actions/git-sync-action)
+Instruction how to mirror github projects via Github Actions with [Git Sync Action](https://github.com/marketplace/actions/git-sync-action)
 
 1) Generate the ssh key (private/pub). The command below will generate
  two files in ~/.ssh dir mirroring_SSH_KEY (private key) and mirroring_SSH_KEY.pub (public key)
@@ -485,15 +485,15 @@ Instruction how to mirror github projects via Github Actions with Git Sync Actio
 $ ssh-keygen -t rsa -b 4096 -C "dougsland@gmail.com"  -f ~/.ssh/mirroring_SSH_KEY
 ```
 
-2) Destionation Project on Github -> Settings -> Deploy Keys:
-Title: SSH_PRIVATE_KEY.pub
+2) Destionation Project on Github -> Settings -> Deploy Keys:  
+Title: SSH_PRIVATE_KEY.pub  
 Key: ```ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDG3FdclV4JHvBED5YnxxTO0pdaEdUUaLagvG8ezbBYKUADAiOpmapa2P5SklQJGzKcJpu74JpvEuP52WjYwYYITM/5GQmWhFxLb73/foP5DQWrhak4fzWf3dQeAF+Gg68omUaa83noLaxQEIkgKaeKm3uimxsxE1f8n+X5lU4Yu/F9FYpOI9W4yd+KcVBsWboP1NeiUDnTR0piTmywYyRqMAGfdb1315xGgh+6sdS7snPc4J+Ff8+QDiaQUMOsBffTM3B1Fi+FEnu30951rCiU0K7MxxNPvih5mpnC+EJRJkJ7mhYK3BV0Sgu6a87ym2IcakYstAVHAeyFrbNe/Rb8jCAO+lmo1gks7ykuaJurCTEgUXrwvbYXDz09M9nR5POpksuDe3BUOSoEzReaigD5HvAsc/uxwfSYzg6E8fiIzL2UXHP6O4egdUd7NdkTwpX0AkvmA4TBpVk9GN2+WXe3EVw== dougsland@gmail.com```
 [x] Allow write access
 
 **Click**: Add Secret
 
-3) Source Project on Github -> Settings -> Secrets -> New repository secret
-Title: SSH_PRIVATE_KEY
+3) Source Project on Github -> Settings -> Secrets -> New repository secret  
+Title: SSH_PRIVATE_KEY  
 Key: ```-----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAACFwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAgEAxtxXXJVeCR7wRA+WJ8cUztKXWhHVFGi2oLxvHs2wWClAAwIjqZmq
