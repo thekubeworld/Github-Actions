@@ -579,6 +579,8 @@ jobs:
      - the tab **Actions**
      - Mirror (the new job)  -> Run workflow -> Branch: main -> Run workflow
 
+6) As it has mirrored the source repo to the destination, **now disable the Github Actions in the Destination site**,  
+otherwise, it will keep failing and sending emails to you
 
 ## GH Actions - Community
 Users can exchange knowledge via [the community around github actions.](https://github.community/c/code-to-cloud/github-actions/)
