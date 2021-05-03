@@ -486,18 +486,15 @@ $ ssh-keygen -t rsa -b 4096 -C "dougsland@gmail.com"  -f ~/.ssh/mirroring_SSH_KE
 ```
 
 2) Destionation Project on Github -> Settings -> Deploy Keys:
-```
 Title: SSH_PRIVATE_KEY.pub
-Key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDG3FdclV4JHvBED5YnxxTO0pdaEdUUaLagvG8ezbBYKUADAiOpmapa2P5SklQJGzKcJpu74JpvEuP52WjYwYYITM/5GQmWhFxLb73/foP5DQWrhak4fzWf3dQeAF+Gg68omUaa83noLaxQEIkgKaeKm3uimxsxE1f8n+X5lU4Yu/F9FYpOI9W4yd+KcVBsWboP1NeiUDnTR0piTmywYyRqMAGfdb1315xGgh+6sdS7snPc4J+Ff8+QDiaQUMOsBffTM3B1Fi+FEnu30951rCiU0K7MxxNPvih5mpnC+EJRJkJ7mhYK3BV0Sgu6a87ym2IcakYstAVHAeyFrbNe/Rb8jCAO+lmo1gks7ykuaJurCTEgUXrwvbYXDz09M9nR5POpksuDe3BUOSoEzReaigD5HvAsc/uxwfSYzg6E8fiIzL2UXHP6O4egdUd7NdkTwpX0AkvmA4TBpVk9GN2+WXe3EVw== dougsland@gmail.com
-```
+Key: ```ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDG3FdclV4JHvBED5YnxxTO0pdaEdUUaLagvG8ezbBYKUADAiOpmapa2P5SklQJGzKcJpu74JpvEuP52WjYwYYITM/5GQmWhFxLb73/foP5DQWrhak4fzWf3dQeAF+Gg68omUaa83noLaxQEIkgKaeKm3uimxsxE1f8n+X5lU4Yu/F9FYpOI9W4yd+KcVBsWboP1NeiUDnTR0piTmywYyRqMAGfdb1315xGgh+6sdS7snPc4J+Ff8+QDiaQUMOsBffTM3B1Fi+FEnu30951rCiU0K7MxxNPvih5mpnC+EJRJkJ7mhYK3BV0Sgu6a87ym2IcakYstAVHAeyFrbNe/Rb8jCAO+lmo1gks7ykuaJurCTEgUXrwvbYXDz09M9nR5POpksuDe3BUOSoEzReaigD5HvAsc/uxwfSYzg6E8fiIzL2UXHP6O4egdUd7NdkTwpX0AkvmA4TBpVk9GN2+WXe3EVw== dougsland@gmail.com```
 [x] Allow write access
 
-Click: Add Secret
+**Click**: Add Secret
 
 3) Source Project on Github -> Settings -> Secrets -> New repository secret
-```
 Title: SSH_PRIVATE_KEY
-Key: -----BEGIN OPENSSH PRIVATE KEY-----
+Key: ```-----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAACFwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAgEAxtxXXJVeCR7wRA+WJ8cUztKXWhHVFGi2oLxvHs2wWClAAwIjqZmq
 Wtj+UpJUCRsynCabu+CabxLj+dlo2MGGCEzP+RkJloRcS2+9/36D+Q0Fq4WpOH81n93UHg
@@ -534,14 +531,16 @@ Q4D/rxQabIW5AAAAE2RvdWdzbGFuZEBnbWFpbC5jb20BAgMEBQYH
 -----END OPENSSH PRIVATE KEY-----
 ```
 
-Click: Add Secret
+**Click**: Add Secret
 
 
 4) On the Source github tree (the one will contain the action):
-
+```
 $ git-source-project> mkdir -p .github/workflows 
 $ cd .github/workflows
 $ vi syncrepo.yml
+```
+
 ```
 name: Mirror
 on:
