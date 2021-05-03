@@ -492,7 +492,7 @@ $ ssh-keygen -t rsa -b 4096 -C "dougsland@gmail.com"  -f ~/.ssh/mirroring_SSH_KE
 -> Settings -> Deploy Keys:  
 
 Title: SSH_PRIVATE_KEY.pub  
-Key: ```ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDG3FdclV4JHvBED5YnxxTO0pdaEdUUaLagvG8ezbBYKUADAiOpmapa2P5SklQJGzKcJpu74JpvEuP52WjYwYYITM/5GQmWhFxLb73/foP5DQWrhak4fzWf3dQeAF+Gg68omUaa83noLaxQEIkgKaeKm3uimxsxE1f8n+X5lU4Yu/F9FYpOI9W4yd+KcVBsWboP1NeiUDnTR0piTmywYyRqMAGfdb1315xGgh+6sdS7snPc4J+Ff8+QDiaQUMOsBffTM3B1Fi+FEnu30951rCiU0K7MxxNPvih5mpnC+EJRJkJ7mhYK3BV0Sgu6a87ym2IcakYstAVHAeyFrbNe/Rb8jCAO+lmo1gks7ykuaJurCTEgUXrwvbYXDz09M9nR5POpksuDe3BUOSoEzReaigD5HvAsc/uxwfSYzg6E8fiIzL2UXHP6O4egdUd7NdkTwpX0AkvmA4TBpVk9GN2+WXe3EVw== dougsland@gmail.com```
+Key: ```ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDG3FdclV4JHvBED5YnxxTO0pdaEdUUaLagvG8ezbBYKUADAiOpmapa2P5SklQJGzKcJpu74JpvEuP52WjYwYYITM/5GQmWhFxLb73/foP5DQWrhak4fzWf3dQeAF+Gg68omUaa83noLaxQEIkgKaeKm3uimxsxE1f8n+X5lU4Yu/F9FYpOI9W4yd+KcVBsWboP1NeiUDnTR0piTmywYyRqMAGfdb1315xGgh+6sdS7snPc4J+Ff8+QDiaQUMOsBffTM3B1Fi+FEnu30951rCiU0K7MxxNPvih5mpnC+EJRJkJ7mhYK3BV0Sgu6a87ym2IcakYstAVHAeyFrbNe/Rb8jCAO+lmo1gks7ykuaJurCTEgUXrwvbYXDz09M9nR5POpksuDe3BUOSoEzReaigD5HvAsc/uxwfSYzg6E8fiIzL2UXHP6O4egdUd7NdkTwpX0AkvmA4TBpVk9GN2+WXe3EVw== dougsland@gmail.com```  
 [x] Allow write access
 
 **Click**: Add Secret
@@ -535,8 +535,7 @@ GLzoxxRai1ESDVg8uk0BzV1f1ux6UENoQhyXKlbeaYGSt8CHRyHPsGvZhebSyTetaGuYhV
 7UglG05p1eHCAxOqv2jIzyQOfyxxCGfJZxJ/z4mGzxhKjAHFmLpRSrwgNS5iURsvhO3zZK
 HpMKNdM5EhQjScFQkJSCTkf+C8pDXpWHpUt5LgSWLbnD49yD12QS/fJ+9weT1r/4hHo39n
 Q4D/rxQabIW5AAAAE2RvdWdzbGFuZEBnbWFpbC5jb20BAgMEBQYH
------END OPENSSH PRIVATE KEY-----
-```
+-----END OPENSSH PRIVATE KEY-----```
 
 **Click**: Add Secret
 
