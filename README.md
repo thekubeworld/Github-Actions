@@ -488,7 +488,7 @@ The command below will generate two files in **~/.ssh dir**
 $ ssh-keygen -t rsa -b 4096 -C "dougsland@gmail.com"  -f ~/.ssh/mirroring_SSH_KEY
 ```
 
-2) **Destination Project** on Github  
+2) At the **Destination Project** on Github  
 -> Settings -> Deploy Keys:  
 
 Title: SSH_PRIVATE_KEY.pub  
@@ -497,7 +497,7 @@ Key: ```ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDG3FdclV4JHvBED5YnxxTO0pdaEdUUaLag
 
 **Click**: Add Secret
 
-3) **Source Project** on Github  
+3) At the **Source Project** on Github  
 -> Settings -> Secrets -> New repository secret  
 
 Title: SSH_PRIVATE_KEY  
