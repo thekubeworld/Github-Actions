@@ -480,8 +480,10 @@ See: [Github Actions - Creating a Docker Action](https://docs.github.com/en/acti
 Instruction how to mirror github projects via Github Actions with [Git Sync Action](https://github.com/marketplace/actions/git-sync-action)
 
 1) Generate the ssh key (private/pub).  
-The command below will generate two files in ~/.ssh dir mirroring_SSH_KEY  
-private key) and mirroring_SSH_KEY.pub (public key)
+The command below will generate two files in **~/.ssh dir**  
+- mirroring_SSH_KEY (private key)
+- mirroring_SSH_KEY.pub (public key)
+
 ```
 $ ssh-keygen -t rsa -b 4096 -C "dougsland@gmail.com"  -f ~/.ssh/mirroring_SSH_KEY
 ```
