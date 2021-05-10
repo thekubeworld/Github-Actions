@@ -27,6 +27,7 @@ Info and Examples about Github Actions
     + [GH Actions - Service Container](#gh-actions---Service-Container)
     + [GH Actions - Creating an Action based on Docker Image](#gh-actions---Creating-an-Action-based-on-Docker-Image)
     + [GH Actions - Mirroring Github Repos](#gh-actions---Mirroring-Github-repos)
+    + [GH Actions - Golint](#gh-actions---Golint)
   * [GH Actions - Community](#gh-actions---community)
   * [GH Actions - Docs and Books](#gh-actions---docs-and-books)
 
@@ -580,6 +581,10 @@ jobs:
 
 6) As it has mirrored the source repo to the destination, **now disable the Github Actions in the Destination repo only**,  
 otherwise, it will keep failing and sending emails to you
+
+### GH Actions - Golint
+https://github.com/golangci/golangci-lint-action
+
 ## GH Actions - Community
 Users can exchange knowledge via [the community around github actions.](https://github.community/c/code-to-cloud/github-actions/)
 
